@@ -24,18 +24,21 @@ export default function CricketBoard(){
         const newWicket = wicket+1;
         setwicket(newWicket);
     }
-
+    function handleTripple(){
+        const updateTripple = run+3;
+        setrun(updateTripple);
+    }
     return(
         <div className="fle">
             <h1>Cricket Board</h1>
             <h2>Total Run: {run} / {wicket} </h2>
             <button onClick={handleSingleRun}>Single</button>
             <button onClick={handleDoubleRun}>Double</button>
-            <button>Tripple</button>
+            <button onClick={handleTripple}>Tripple</button>
             <button onClick={handleFour}>Four</button>
             <button onClick={handleSix}>Six</button>
-            <button>No Ball</button>
-            <button>Wide Ball</button>
+            <button onClick={handleSingleRun}>No Ball</button>
+            <button onClick={handleSingleRun}>Wide Ball</button>
             <button onClick={handleWicket}>Wicket</button>
 
         </div>
