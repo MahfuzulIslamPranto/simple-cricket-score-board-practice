@@ -43,4 +43,6 @@
 .users-css{
   border: 2px solid green;
   padding: 5px;
+  margin: 10px;
+  border-radius: 20px;
 }
